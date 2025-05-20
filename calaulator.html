@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+
+<style>
+    .container {
+        height: 60vh;
+        width: 60vh;
+        position: relative;
+        background-color:rgba(128, 128, 128, 0.516);
+        box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.537), -5px -5px 15px rgba(255, 255, 255, 0);
+        border-radius: 10px;
+
+    }
+    #num1{
+        font-size: large;
+        width: 90%;
+        position: absolute;
+        left: 5%;
+        top: 0px;
+        border-radius: 10px;
+
+        
+
+    }
+    #num2{
+        font-size: large;
+        width: 90%;
+        position: absolute;
+        left: 5%;
+        top: 10%;
+        border-radius: 10px;
+
+    }
+    .button{
+        height: 50%;
+        width: 10%;
+        position: absolute;
+        top: 20%;
+        right:5px;
+        padding: 5px;
+        display: flex;
+        flex-direction: column;
+        background-color: cornflowerblue;
+        border-radius: 10px;
+    }
+   #add{
+        background-color: blue;
+        color: white;
+        margin: 13px 5px 0px 0px ;
+        width: 90%;
+    }
+    #sub{
+        background-color: blue;
+        color: white;
+        margin: 13px 5px 0px 0px ;
+        width: 90%;
+    }
+    #multi{
+        background-color: blue;
+        color: white;
+        margin: 13px 5px 0px 0px ;
+        width: 90%;
+    }
+    #div{
+        background-color: blue;
+        color: white;
+        margin: 13px 5px 0px 0px ;
+        width: 90%;
+    }
+    #Ac{
+        background-color: blue;
+        color: white;
+        margin: 13px 5px 0px 0px ;
+        width: 90%;
+    }
+    #ans{
+        position: absolute;
+        top: 20%;
+        left: 5%;
+        width: 70%;
+        height: 10%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: darkslategray;
+        color: white;
+        border-radius: 10px;
+
+    }
+</style>
+
+<body>
+
+
+    <div class="container">
+
+
+        <input type="number" id="num1" placeholder="Number 1">
+        <input type="number" id="num2" placeholder="Number 2">
+        <div class="button">
+            <button id="add">+</button>
+            <button id="sub">-</button>
+            <button id="multi">×</button>
+            <button id="div">/</button>
+            <button id="Ac">AC</button>
+        </div>
+
+
+        <h3 id="ans">Ans</h3>
+
+
+    </div>
+
+
+    <script src="caluculator.js"></script>
+</body>
+
+</html>
